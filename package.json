@@ -1,11 +1,11 @@
 {
     "name": "Selvania-Launcher",
-    "preductname": "Selvania Launcher",
+    "preductname": "AkunLauncher",
     "version": "1.0.5",
-    "description": "Launcher Mincraft custom (crack, premium)",
+    "description": "by Akun | Non production launcher",
     "main": "src/app.js",
-    "author": "Luuxis",
-    "url": "http://launcher.selvania.fr",
+    "author": "Luuxis and Shoqapique",
+    "url": "http://cdn.akun.fr",
     "engines": {
         "node": "16.x.x"
     },
