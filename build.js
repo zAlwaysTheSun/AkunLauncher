@@ -1,6 +1,7 @@
 const builder = require('electron-builder')
 const { preductname } = require('./package.json')
 
+console.log("Début du build");
 
 builder.build({
     config: {
@@ -45,7 +46,7 @@ builder.build({
         }
     }
 }).then(() => {
-    console.log('le build est terminé')
+    console.log('Le build vient de se terminer.')
 }).catch(err => {
-    console.error('Error during build!', err)
+    console.error('Une erreur est survenue durant ce build :', err)
 })
