@@ -22,9 +22,9 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Je... vie...", "author": "Luuxis" },
-            { "message": "Salut je suis du code.", "author": "Luuxis" },
-            { "message": "Linux n' ai pas un os, mais un kernel.", "author": "Luuxis" }
+            { "message": "Le nouveau launcher est pas mal du touuut", "author": "Atmoz" },
+            { "message": "Peut être qu'il y a des easter eggs cachés..", "author": "Atmoz" },
+            { "message": "Dans l'océan y'a de l'eau.", "author": "Atmoz" }
         ]
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
@@ -74,7 +74,7 @@ class Splash {
             this.startLauncher();
         }).catch(e => {
             console.error(e);
-            return this.shutdown("Aucune connexion internet détectée,<br>veuillez réessayer ultérieurement.");
+            return this.shutdown("Problème de connexion internet,<br>veuillez réessayer ultérieurement.");
         })
     }
 
