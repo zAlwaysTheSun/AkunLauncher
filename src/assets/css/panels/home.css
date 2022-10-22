@@ -37,6 +37,7 @@
     border: none;
     border-radius: 15px;
     transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+    cursor: pointer;
 }
 
 .settings-btn:hover {
@@ -58,6 +59,7 @@
     text-align: center;
 }
 
+
 .play-btn {
     top: 10px;
     width: 160px;
@@ -69,6 +71,11 @@
     color: #121212;
     margin: 15px 0;
     box-shadow: 0 0 5px #00bd7a;
+    cursor: pointer;
+}
+.play-btn:hover {
+    background: #056644;
+
 }
 
 .download-content {
@@ -229,7 +236,7 @@
     background-color: #292929;
     border-radius: 10px;
     transition: opacity 1s;
-    opacity: .4;
+    opacity: 1;
 }
 
 .server:hover {
@@ -265,7 +272,7 @@
 }
 
 .green {
-    color: #1AC707;
+    color: #f3730b;
 }
 
 .red {
