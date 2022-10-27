@@ -98,3 +98,32 @@ autoUpdater.on('download-progress', (progress) => {
     const updateWindow = UpdateWindow.getWindow();
     if (updateWindow) updateWindow.webContents.send('download-progress', progress);
 })
+
+
+/// Partie de code rich presence Discord
+
+const RPC = require('discord-rpc');// how this works lol
+const rpc = new RPC.Client({
+    transport: "ipc" // don't know what this does, I just read documentation
+});
+
+rpc.on("ready", () => {
+    rpc.setActivity({
+        details: "Joue à notre serveur 😎", // text under Application name
+        state: "Rejoins notre Discord ! 😁", // text under details 
+        startTimestamp: new Date(), // If you want to show how long the status has been running, if you don't want it, put // infront of the line or just delete this line
+        largeImageKey: "logobouge", //must match images in the application
+        largeImageText: "Akun.fr", // This is the text above the large image
+        smallImageKey:"logobouge", //must match images in the application
+        smallImageText: "url.akun.fr/dsgg", // this is the text above the small image
+                buttons: [
+            { label: "Discord 😁", url: "https://url.akun.fr/dsgg" }, //ex. { label: "My Dev Discord Server", url: "https://discord.gg/46HQ9rJ" },
+            { label: "Site 😎", url: "https://akun.fr" } // ex. { label: "My Main Discord", url: "https://discord.gg/cEhU6VF" },
+        ]
+    });
+    console.log("Rich Presence is now active"); // lets you know it worked
+})
+
+rpc.login({
+    clientId: "1035161160829374474" //https://discord.com/developers/applications
+})
