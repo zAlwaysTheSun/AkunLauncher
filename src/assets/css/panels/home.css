@@ -39,11 +39,27 @@
     transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
     cursor: pointer;
 }
-
 .settings-btn:hover {
     border-radius: 5px;
     transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
 }
+.discord-btn {
+    position: absolute;
+    top: 10px;
+    right: 135px;
+    text-align: center;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+    cursor: pointer;
+}
+
+.discord-btn:hover {
+    border-radius: 5px;
+    transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+}
+
 
 .icon-settings:before {
     font-size: 40px;
