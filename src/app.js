@@ -102,28 +102,24 @@ autoUpdater.on('download-progress', (progress) => {
 
 /// Partie de code rich presence Discord
 
-const RPC = require('discord-rpc');// how this works lol
+const RPC = require('discord-rpc'); // On défini la dépendance et l'abréviation RPC
 const rpc = new RPC.Client({
-    transport: "ipc" // don't know what this does, I just read documentation
+    transport: "ipc" // Connexion à l'API si nécessaire
 });
 
 rpc.on("ready", () => {
     rpc.setActivity({
-        details: "Joue à notre serveur 😎", // text under Application name
-        state: "Rejoins notre Discord ! 😁", // text under details 
-        startTimestamp: new Date(), // If you want to show how long the status has been running, if you don't want it, put // infront of the line or just delete this line
-        largeImageKey: "logobouge", //must match images in the application
-        largeImageText: "Akun.fr", // This is the text above the large image
-        smallImageKey:"logobouge", //must match images in the application
-        smallImageText: "url.akun.fr/dsgg", // this is the text above the small image
-                buttons: [
-            { label: "Discord 😁", url: "https://url.akun.fr/dsgg" }, //ex. { label: "My Dev Discord Server", url: "https://discord.gg/46HQ9rJ" },
-            { label: "Site 😎", url: "https://akun.fr" } // ex. { label: "My Main Discord", url: "https://discord.gg/cEhU6VF" },
-        ]
+        details: "Rejoins notre Discord ! 😎", // Texte en dessous du titre du RPC
+        state: "url.akun.fr/dsg", // Texte en dessous des details
+        startTimestamp: new Date(), // Défini la durée de lancement du launcher
+        largeImageKey: "logobouge", // Définition de la grande image
+        largeImageText: "Akun.fr", // Texte à afficher lorsque l'on passe la souris dessus (grande image)
+        smallImageKey:"logobouge", // Définition de la petite image
+        smallImageText: "url.akun.fr/dsgg", // Texte à afficher lorsque l'on passe la souris dessus (petite image)
     });
-    console.log("Rich Presence is now active"); // lets you know it worked
+    console.log("Rich Presence is now active"); // Affirmation comme quoi la RPC est bien lancée dans la console
 })
 
 rpc.login({
-    clientId: "1035161160829374474" //https://discord.com/developers/applications
+    clientId: "1035161160829374474" // https://discord.com/developers/applications
 })
