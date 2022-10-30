@@ -22,7 +22,7 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Le nouveau launcher est pas mal du touuut", "author": "Atmoz" },
+            { "message": "Vous saviez que dehors, il y a des arbres... ? #ModérateurDiscord", "author": "Shoqapique" },
             { "message": "Peut être qu'il y a des easter eggs cachés..", "author": "Atmoz" },
             { "message": "Dans l'océan y'a de l'eau.", "author": "Atmoz" }
         ]
@@ -44,12 +44,12 @@ class Splash {
 
     async checkUpdate() {
         if (dev) return this.startLauncher();
-        this.setStatus(`recherche de mise à jour...`);
+        this.setStatus(`Recherche de mises à jour...`);
 
         ipcRenderer.invoke('update-app').then(err => {
             if (err.error) {
                 let error = err.message;
-                this.shutdown(`erreur lors de la recherche de mise à jour :<br>${error}`);
+                this.shutdown(`Erreur lors de la recherche de mises à jour :<br>${error}`);
             }
         })
 
