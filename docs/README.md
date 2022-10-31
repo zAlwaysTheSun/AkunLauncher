@@ -14,3 +14,6 @@ Il est possible de télécharger le launcher à [cette adresse.](https://github.
 # Mises à jour
 
 Nous mettons minimum 1 mise à jour/semaine pour faire en sorte que le launcher soit le mieux utilisable possible.
+
+## Droits d'auteur
+[![Creative Common 4.0 License](https://img.shields.io/badge/License-CC%204.0-red)](https://creativecommons.org/licenses/by-nc/4.0/deed.fr)
