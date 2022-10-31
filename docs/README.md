@@ -13,4 +13,4 @@ Il est possible de télécharger le launcher à [cette adresse.](https://github.
 
 # Mises à jour
 
-Nous mettons minimum 1 mise à jour/semaine pour faire en sorte lque le launcher soit le mieux utilisable possible.
+Nous mettons minimum 1 mise à jour/semaine pour faire en sorte que le launcher soit le mieux utilisable possible.
