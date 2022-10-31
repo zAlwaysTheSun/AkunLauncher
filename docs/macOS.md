@@ -11,5 +11,4 @@ Pour le moment, nous n'avons pas encore d'idée précise à propos de ça. Mais 
 Bien sûr, néanmoins le support macOS supprimé, il n'empêche que le launcher macOS sera toujours disponible au téléchargement pour voir s'il fonctionne avec votre appareil. Autrement, c'est à vos risques et périls : en précisant bien que le launcher ne peut pas supprimer des fichiers de votre ordinateur !! [Cliquez ici pour le télécharger](https://github.com/zAlwaysTheSun/AkunLauncher/releases)
 
 
-## Droits d'auteur
-[![Creative Common 4.0 License](https://img.shields.io/badge/License-CC%204.0-red)](https://choosealicense.com/licenses/mit/)
+
