@@ -110,7 +110,7 @@ const rpc = new RPC.Client({
 rpc.on("ready", () => {
     rpc.setActivity({
         details: "Rejoins notre Discord ! 😎", // Texte en dessous du titre du RPC
-        state: "url.akun.fr/dsg", // Texte en dessous des details
+        state: "url.akun.fr/dsgg", // Texte en dessous des details
         startTimestamp: new Date(), // Défini la durée de lancement du launcher
         largeImageKey: "logobouge", // Définition de la grande image
         largeImageText: "Akun.fr", // Texte à afficher lorsque l'on passe la souris dessus (grande image)
