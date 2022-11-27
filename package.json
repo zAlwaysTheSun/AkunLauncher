@@ -1,7 +1,7 @@
 {
     "name": "AkunLauncher",
     "preductname": "Akun Launcher",
-    "version": "v1.0.4",
+    "version": "v1.0.5",
     "description": "Launcher Minecraft du serveur Akun",
     "main": "src/app.js",
     "author": "Atmoz, Shoqapique et Luuxis",
